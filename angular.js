@@ -7,3 +7,10 @@
 
 </body>
 </html>
+
+
+var myNewApp = angular.module('myNewApp', [])
+
+.controller('MyNewCtrl', function ($scope) {
+  $scope.something = true;
+});
