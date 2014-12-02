@@ -5,3 +5,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 filename=$(basename "$fullfile")
 extension="${filename##*.}"
 filename="${filename%.*}"
+
+# Remove diacritic.
+iconv -f utf8 -t ascii//TRANSLIT
