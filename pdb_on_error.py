@@ -12,8 +12,8 @@ def info(type, value, tb):
         # we are NOT in interactive mode, print the exception…
         traceback.print_exception(type, value, tb)
         print
-        # …then start the debugger in post-mortem mode.
+        # then start the debugger in post-mortem mode.
         # pdb.pm() # deprecated
-        pdb.post_mortem(tb) # more “modern”
+        pdb.post_mortem(tb) # more modern
 
 sys.excepthook = info
