@@ -9,7 +9,7 @@ def info(type, value, tb):
         sys.__excepthook__(type, value, tb)
     else:
         import traceback, pdb
-        # we are NOT in interactive mode, print the exception…
+        # we are NOT in interactive mode, print the exception
         traceback.print_exception(type, value, tb)
         print
         # then start the debugger in post-mortem mode.
