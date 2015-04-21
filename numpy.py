@@ -7,3 +7,5 @@ for i in range(x.shape[0]):
 # Better printing options.
 np.set_printoptions(threshold='nan')
 np.set_printoptions(linewidth=200)
+np.set_printoptions(precision=2)
+np.set_printoptions(formatter={'float':lambda x: "%.2f" % x if x != 0.0 else "    ", 'int': lambda x: "%4d" % x if x != 0 else "    "})
